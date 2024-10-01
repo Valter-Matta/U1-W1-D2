@@ -4,12 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seconda giornata di HTML</title>
+    <style>
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        border: 1px solid black;
+        padding: 5px;
+        border-collapse: collapse;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>tabelle e forms</h1>
+      <h2>Seconda (e ultima) giornata di Html</h2>
     </header>
-    <main></main>
+    <main>
+      <table>
+        <!-- anche una tabella si puoò dividere in più parti -->
+        <!-- thead,tbody,tfoot -->
+        <thead>
+          <caption>
+            Elenco alunni
+          </caption>
+          <!-- una tabella si divide anzitutto in RIGHE -->
+          <!-- nell'head ci va solo una riga di intestazione dei campi  -->
+          <tr>
+            <!-- table row -->
+            <th>
+              nome
+              <!-- nomi dei campi -->
+            </th>
+            <th>cognome</th>
+            <th>età</th>
+            <th>professione</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- qui ci vanno i DATI -->
+          <!-- colonne che seguono i th -->
+          <td>valter</td>
+          <td>matta</td>
+          <td>26</td>
+          <td>programmatore</td>
+        </tbody>
+        <tfoot>
+          <!-- Sta alla fine della tabella, sommario, età medià -->
+          <tr>
+            <td colspan="2">Età media</td>
+            <td>22.5</td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
     <footer></footer>
   </body>
 </html>
