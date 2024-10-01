@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esempio di Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Iscriviti alla nostra neswletter</h1>
+    </header>
+    <main>
+      <form action="">
+        <div>
+          <!-- questo contenito avrà due elementi: -->
+          <!-- etichetta del campo=email -->
+          <label for="name-field">inserisci il tuo nome</label>
+          <!-- il valore dell'atributo for della label è sempre uguale al valore dell'attributo ID dell'input -->
+          <input id="name-field" type="text" placeholder="mariorossi" />
+        </div>
+        <div>
+          <!-- questo contenito avrà due elementi: -->
+          <!-- etichetta del campo=email -->
+          <label for="number-field">inserisci il tuo nome</label>
+          <!-- il valore dell'atributo for della label è sempre uguale al valore dell'attributo ID dell'input -->
+          <input id="number-field" type="number" placeholder="+39*******" />
+        </div>
+
+        <div>
+          <!-- questo contenito avrà due elementi: -->
+          <!-- etichetta del campo=email -->
+          <label for="email-field">inserisci la tua email</label>
+          <!-- il valore dell'atributo for della label è sempre uguale al valore dell'attributo ID dell'input -->
+          <input
+            id="email-field"
+            type="email"
+            placeholder="mariorossi@gmail.com"
+            required
+          />
+          <!-- required rende il campo obbligatorio -->
+        </div>
+        <!-- questo buttom è dentro un form! -->
+        <!-- di default NON avrà il type buttom, ma un type sumbit, ovvero si resetta al click perchè invia le info -->
+        <button type="button">Registrati!</button>
+      </form>
+    </main>
+    <footer>Epicode 2024</footer>
+  </body>
+</html>
